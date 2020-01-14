@@ -7,7 +7,8 @@ public class Vrachtschip extends Schip implements Loodsbaar {
     public Vrachtschip() {
     }
 
-    public Vrachtschip(double laadVermogen) {
+    public Vrachtschip(String naam, double lengte, double laadVermogen) {
+        super(naam, lengte);
         this.laadVermogen = laadVermogen;
     }
 

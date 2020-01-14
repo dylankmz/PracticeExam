@@ -7,7 +7,8 @@ public class Zeilboot extends Schip {
     public Zeilboot() {
     }
 
-    public Zeilboot(int masten) {
+    public Zeilboot(String naam, double lengte, int masten) {
+        super(naam, lengte);
         this.masten = masten;
     }
 

@@ -12,7 +12,7 @@ public class Haven {
     protected HashSet<Schip> schepen = new HashSet<>();
 
     public boolean aanmeren(Schip schip) {
-        System.out.println("Aanmeren van ???" + schip.toString());
+        System.out.println("Aanmeren van [" + schip.toString() + ']');
         return false;
     }
 
