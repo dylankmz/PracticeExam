@@ -14,6 +14,8 @@ public class Haven {
     public boolean aanmeren(Schip schip) {
         System.out.println("Aanmeren van [" + schip.toString() + ']');
         return false;
+
+        if (Schip )
     }
 
 
