@@ -12,13 +12,21 @@ public class Vrachtschip extends Schip implements Loodsbaar {
         this.laadVermogen = laadVermogen;
     }
 
+    public double getLaadVermogen() {
+        return laadVermogen;
+    }
+
+    public void setLaadVermogen(double laadVermogen) {
+        this.laadVermogen = laadVermogen;
+    }
+
     @Override
     public String toString() {
-        return "Vrachtschip: " + naam + "lengte " +  lengte + ',' + "laadvermogen: " + laadVermogen;
+        return "Vrachtschip: " + naam + " lengte: " +  lengte + ',' + "laadvermogen: " + laadVermogen + 'T';
     }
 
     @Override
     public void loods() {
-        System.out.println("Vrachtschip GroteFrans loodsen...");
+        System.out.println("Vrachtschip " + naam + " loodsen...");
     }
 }
