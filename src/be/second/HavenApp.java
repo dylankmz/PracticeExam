@@ -4,11 +4,11 @@ import be.second.model.Haven;
 import be.second.model.Vrachtschip;
 import be.second.model.Zeilboot;
 
-public class Main {
+public class HavenApp {
 
     public static void main(String[] args) {
 
-        System.out.println("--- Haven-Kiwi ---");
+        System.out.println("*--- Haven-Kiwi ---*");
         Vrachtschip v1 = new Vrachtschip();
         v1.setNaam("GroteFrans");
         v1.setLengte(100);

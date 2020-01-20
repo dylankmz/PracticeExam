@@ -54,14 +54,17 @@ public class Haven {
     public void afmeren(String naam) throws Exception {
         Schip schip = null;
 
-        for (Schip s: schepen
-             ) {
-            if (s.getNaam().equals(naam));
+        for (Schip s : schepen
+        ) {
+            if (s.getNaam().equals(naam)) ;
             schip = s;
         }
 
         if (schip == null) {
-            throw new Exception("Afmeren mislukt: Schip: " + naam + " ligt niet in onze haven!");
+            throw new Exception("Schip: " + naam + " ligt niet in onze haven!");
         }
+        // Het schip werd gevonden, laat het "vertrekken" en verwijder het uit de haven
+        this.huidigeLengte -= schip.getLengte();
+        this.schepen.remove(schip);
     }
 }

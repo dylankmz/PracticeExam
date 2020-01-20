@@ -22,7 +22,7 @@ public class Vrachtschip extends Schip implements Loodsbaar {
 
     @Override
     public String toString() {
-        return "Vrachtschip: " + getLengte() + ", " + "laadvermogen: " + laadVermogen;
+        return "Vrachtschip: " + getNaam() + " " + getLengte() + ", " + "laadvermogen: " + laadVermogen;
     }
 
     @Override
