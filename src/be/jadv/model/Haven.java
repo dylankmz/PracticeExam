@@ -27,12 +27,12 @@ public class Haven extends Schip {
         Schip schip = null;
         for (Schip s : schepen
         ) {
-            if (s.getNaam().equals(this.naam)) {
+            if (s.getNaam().equals(naam)) {
                 schip = s;
             }
 
             if (schip == null) {
-                throw new Exception("Schip " + this.naam + " ligt niet in onze haven!");
+                throw new Exception("Schip: " + naam + " ligt niet in onze haven!");
             }
 
             huidigeLengte -= schip.getLengte();

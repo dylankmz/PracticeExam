@@ -4,12 +4,10 @@ import be.jadv.model.Haven;
 import be.jadv.model.Vrachtschip;
 import be.jadv.model.Zeilboot;
 
-import javax.sound.midi.ShortMessage;
-import java.util.GregorianCalendar;
 
 public class Main {
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
         System.out.println("--- Hawa-Kiwi ---");
         Vrachtschip GroteFrans = new Vrachtschip();
@@ -37,6 +35,13 @@ public class Main {
 
         WallyKiwi.aanmeren(SuperMaramiu);
 
+        try {
+            WallyKiwi.afmeren("BigFrans");
+            WallyKiwi.afmeren("SmallSally");
+            WallyKiwi.afmeren("GreatMaramiu");
+        } catch (Exception e) {
+            System.out.println("Afmeren mislukt " + e.getMessage());
+        }
 
     }
 }
